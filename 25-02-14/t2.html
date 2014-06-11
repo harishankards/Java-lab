@@ -1,0 +1,23 @@
+<html>
+<body>
+<p>Time-based Greeting.</p>
+<button onclick="Func()">Click</button>
+<p id="demo"></p>
+<script>
+function Func()
+{
+        var x="";
+        var time=new Date().getHours();
+        if(time<11)
+                x="Good morning";
+        else if(time<15)
+                x="Good noon";
+        else if(time<19)
+                x="Good evening";
+        else
+                x="Good night";
+        document.getElementById("demo").innerHTML=x;
+}
+</script>
+</body>
+</html>

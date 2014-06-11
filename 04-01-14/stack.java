@@ -1,0 +1,66 @@
+import java.util.Scanner;
+public class stack
+{
+	int size,top;
+	int a[];
+	public stack(int s)
+	{
+		size=s;
+		a=new int[size];
+		top=-1;
+	}
+	public boolean isfull()
+	{
+		return (top==size-1);
+	}
+	public boolean isempty()
+	{
+		return (top==-1);
+	}
+	public void push(int j)
+	{	
+		if(!isfull())
+		{
+			a[++top]=j;
+		}
+		else
+		{
+			System.out.println("Stack is full");
+		}
+	}
+	public int pop()
+	{
+		if(!isempty())
+			return a[top--];
+		else
+			return 0;
+	}
+	void display()
+	{
+		System.out.println("Stack elements are :");
+		for(int i=0;i<=top;i++)
+		{		System.out.println(a[i]);
+	}}
+	public static void main(String args[])
+	{
+		int a,i,x;
+		System.out.println("enter the size of the stack");
+		Scanner s=new Scanner(System.in);
+		a=s.nextInt();
+		stack st=new stack(a);
+		System.out.println("Enter"+a+"elements :");
+		for(i=0;i<a;i++)
+		{
+			x=s.nextInt();
+			 st.push(x);
+			
+		}
+		st.display();
+		System.out.println(" enter the no.of elements to be popped ");
+		x=s.nextInt();
+		System.out.println("the popped element");
+		for(i=0;i<x;i++)
+			System.out.println(st.pop());
+		st.display();
+	}
+}

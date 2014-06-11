@@ -1,0 +1,92 @@
+import java.io.*;
+class threadwrite implements Runnable
+{
+	String name,branch;
+	int rno;
+	private volatile boolean running=true;
+	public threadwrite(){}
+	public threadwrite(int p)
+	{
+		t=new Thread(this);
+		t=setProirity(p);
+	}
+	public void start()
+	{
+		t.start();
+	}
+	public void stop()
+	{
+		runnning=false;
+	}
+	public void set(String a,String b,int c)
+	{
+		rno=c;
+		name=a;
+		branch=b;
+	}
+	public void run()
+	{
+		try
+		{
+			File f=new File("abc.txt");
+			OutputStream.fout=new File OutputStream(f);
+			String str="40\n "+" Harish\n"+"CSE\n";
+			byte buf[]=str.getBytes();
+		}
+		catch(Exception e)
+		{
+			System.out.println("Writing interrupted");
+		}
+
+}
+class threadwrite implements Runnable
+{
+	String name,branch;
+	int rno;
+	private volatile boolean running=true;
+	public threadwrite(){}
+	public threadwrite(int p)
+	{
+		t=new Thread(this);
+		t=setProirity(p);
+	}
+	public void start()
+	{
+		t.start();
+	}
+	public void stop()
+	{
+		runnning=false;
+	}
+	public void set(String a,String b,int c)
+	{
+		rno=c;
+		name=a;
+		branch=b;
+	}
+	public void run()
+	{
+		try
+		{
+			int i=1;
+			File f=new File("abc.txt");
+			InputStream.fin=new FileInputStream(f);
+			int c=fin.read();
+			while(c!=1)
+			{
+				System.out.println((char) c);
+				c=fin.read();
+			}
+		}
+		catch(Exception e)
+		{
+			System.out.println("Writing interrupted");
+		}
+	}
+}
+public class threadDemo
+{
+	public static void main(String args[])
+	{
+				
+		

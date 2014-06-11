@@ -1,0 +1,25 @@
+public class const
+{
+	private int c;
+	public const()
+	{
+		c=0;
+		System.out.println("default");
+		System.out.println("C+"+c);
+	}
+	public const(int value)
+	{
+		c=value;
+		System.out.println("parametrized");
+		System.out.println("C="+c);
+	}
+}
+Public class construct
+{
+	public static void main(String args[])
+	{
+		const c1=new const();
+		const c2=new const(10);
+	}
+}
+	

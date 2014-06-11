@@ -1,0 +1,38 @@
+<html>
+<head>
+<title> Circle </title>
+</head>
+<script>
+
+	function calc() {
+		var r = document.form1.radius.value;
+		if(r == "" || r == null || isNaN(r) )  {
+			alert(" Give a proper value" );
+			return;
+		}
+		var area = r * r;
+		var vol = (4 / 3) * 3.14 * r * r * r;
+		var circum = 2 * 3.14 * r;
+		document.write(" the area is \t" + area);
+		document.write(" ");
+		document.write("\n the volume is \t" + vol);
+		document.write(" ");
+		document.write("\ncicumference is \t" + circum );
+	}
+	function dis() {
+		pid.innerHTML="click here";
+	}
+	function dis(r) {
+		pid.innerHTML="";
+	}	
+</script>
+
+<body>
+<div id="div1" color="red"></div>
+<form name="form1" id="form1" class="form1">
+<input name="radius" id="radius" type="text" onfocuschange="sub.focus()" placeholder="enter ur radius" ><br><br>
+<button name="sub" id="sub" value="submit" onclick="calc()" onmouseover="dis()"  >submit
+<p name="pid" id="pid" ></p>
+</form>
+</body>
+</html>

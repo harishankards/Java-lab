@@ -1,0 +1,21 @@
+<html>
+<body>
+<button onclick="Func()">Click</button>
+<p id="demo"></p>
+<p id="demo2"></p>
+<script>
+function Func()
+{
+        var cir,area;
+        var r=prompt("Radius:","");
+        if(r!=null)
+        {
+                cir=2*3.14*r;
+                area=3.14*r*r;
+                document.getElementById("demo").innerHTML=cir;
+                document.getElementById("demo2").innerHTML=area;
+        }
+}
+</script>
+</body>
+</html>

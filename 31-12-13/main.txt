@@ -1,0 +1,30 @@
+class A
+{
+	public void print A()
+	{
+		System.out.println("In class A");
+	}
+}
+class B extends A
+{
+	public void print B()
+	{	
+		System.out.println("In class B");
+	}
+}
+class C extennds B
+{
+	public void print(1)
+	{
+		System.out.println("In class C");
+	}
+}
+public class main
+{
+	public static void main(String args[])
+	{
+		A x=new A(); x.print A();
+		B y=new B(); y.print A(); y.print B();
+		C z=new C(); z.print A(); z.print B(); Z.print C();
+	}
+}

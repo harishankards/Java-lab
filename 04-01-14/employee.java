@@ -1,0 +1,45 @@
+import java.util.Scanner;
+public class employee
+{
+	String name,desig;
+	double salary;
+	public double salary_cal()
+	{
+		salary=25000;
+		return (double)(25000);
+	}
+	public double salary_cal(double basic)
+	{
+		salary=basic+(basic*0.3)+500;
+		return salary;
+	}
+	public static void main(String args[])
+	{
+		double basic;
+		employee t=new employee();
+		employee p=new employee();
+		System.out.println("Enter the name and designation for temp.employee");
+		Scanner sc=new Scanner(System.in);
+		t.name=sc.nextLine();
+		t.desig=sc.nextLine();
+		System.out.println("enter the name,designation and basic salary");
+		p.name=sc.nextLine();
+		p.desig=sc.nextLine();
+		basic=sc.nextDouble();
+		System.out.print("Salary for temporary employees");
+		System.out.println(t.salary_cal());
+		System.out.print("Salary for permanent employees:");
+		System.out.println(p.salary_cal(basic));
+		if(t.salary>p.salary)
+		{
+			System.out.println("Highest paid employees is"+t.name);
+		}
+		else
+		{
+			System.out.println("Highest paid employees is "+p.name);
+		}
+	}
+}
+				
+				
+		

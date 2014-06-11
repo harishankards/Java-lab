@@ -1,0 +1,9 @@
+<!ELEMENT students (student+)>
+<!ELEMENT student (Name,Rollno,Year,Batch,Branch,Address,Contact_No)>
+<!ELEMENT Name (#PCDATA)>
+<!ELEMENT Rollno (#PCDATA)>
+<!ELEMENT Year (#PCDATA)>
+<!ELEMENT Batch (#PCDATA)>
+<!ELEMENT Branch (#PCDATA)>
+<!ELEMENT Address (#PCDATA)>
+<!ELEMENT Contact_No (#PCDATA)>

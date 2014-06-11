@@ -1,0 +1,23 @@
+public class dimension
+{
+	int l,b;
+}
+public class rectangle extends dimension
+{
+	int a;
+	void area()
+	{
+		a=l*b;
+	}
+}
+class Area
+{
+	public static void main(String args[])
+	{
+		rectangle dim=new rectangele();
+		dim.l=10;
+		dim.b=5;
+		dim.area();
+		System.out.println("Area:"+dim.a);
+	}
+}

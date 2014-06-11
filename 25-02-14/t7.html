@@ -1,0 +1,19 @@
+<html>
+<body>
+<p>Confirm box.</p>
+<button onclick="Func()">Click</button>
+<p id="kai"></p>
+<script>
+function Func()
+{
+        var x;
+        var r=confirm("Press a button!");
+        if(r==true)
+                x="You pressed ok!";
+        else
+                x="You pressed cancel!";
+        document.getElementById("hari").innerHTML=x;
+}
+</script>
+</body>
+</html>

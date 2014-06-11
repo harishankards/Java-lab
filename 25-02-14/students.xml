@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE students SYSTEM "studentsinfor.dtd">
+<?xml:stylesheet type="text/xsl" href="studentinf.xsl"?>
+<students>
+
+<student>
+<Name>Harishankar</Name>
+<Rollno>2012103539</Rollno>
+<Year>2</Year>
+<Batch>4_G</Batch>
+<Branch>CSE</Branch>
+<Address>Chennai</Address>
+<Contact_No>9715442929</Contact_No>
+</student>
+
+<student>
+<Name>Madhavan</Name>
+<Rollno>2012103541</Rollno>
+<Year>2</Year>
+<Batch>4_G</Batch>
+<Branch>CSE</Branch>
+<Address>Virudhunagar</Address>
+<Contact_No>9876590876</Contact_No>
+</student>
+
+<student>
+<Name>Karthik</Name>
+<Rollno>2012103944</Rollno>
+<Year>2</Year>
+<Batch>4_L</Batch>
+<Branch>IST</Branch>
+<Address>Coimbatore</Address>
+<Contact_No>8973761400</Contact_No>
+</student>
+
+<student>
+<Name>Aadithya</Name>
+<Rollno>2012103001</Rollno>
+<Year>2</Year>
+<Batch>4_G</Batch>
+<Branch>CSE</Branch>
+<Address>Chennai</Address>
+<Contact_No>9842512483</Contact_No>
+</student>
+</students>

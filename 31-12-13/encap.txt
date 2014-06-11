@@ -1,0 +1,25 @@
+import java.util.scanner;
+public class circle
+{
+	private double radius;
+	public circle(double red);
+	{
+		radius=rad;
+	}
+	public double getradius()
+	{
+		return radius;
+	}
+	public double getarea()	
+	{
+		return Math.pI*radius*radius;
+	}
+}
+public static void main(String args[])
+{
+	Scanner in=new scanner(System.in);
+	System.out.println("Enter radius");
+	double r=in.nextdouble;
+	circle c=new circle(r);
+	System.out.println("radius:"+c.getradius()+"Area:"+c.getarea());
+}
